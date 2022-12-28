@@ -2,3 +2,5 @@ node_modules
 cypress/videos
 cypress/reports
 .vscode
+results
+reports

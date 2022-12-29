@@ -10,5 +10,10 @@ class HomePage extends BasePage {
 			this.accessMenuByText(selectors.menuLinks, dataEnv.menus.AB)
 		})
 	}
+	accessRemoveElementsPage() {
+		cy.fixture('env').then(dataEnv => {
+			this.accessMenuByText(selectors.menuLinks, dataEnv.menus.RemoveElement)
+		})
+	}
 }
 export default HomePage

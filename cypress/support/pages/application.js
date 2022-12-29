@@ -2,7 +2,7 @@
 
 // ----------------------------------------------------------------Pages -----------------------------------------------------------//
 import HomePage from './applications/homePage'
-
+import AbPage from './applications/abPage'
 /**
  * This is the main class the encapsulates all pages regarding the application (Except base pages since they are not meant to be directly called).
  *
@@ -16,6 +16,7 @@ class Application {
 
 		// --------------------------------------------------------------------------------Pages ----------------------------------------------------------------------//
 		// Statement Management
+		this.abPage = new AbPage()
 		this.homePage = new HomePage()
 	}
 }

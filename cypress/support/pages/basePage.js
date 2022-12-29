@@ -4,8 +4,14 @@ class BasePage {
 	 * @param {String} element
 	 * @param {String} text
 	 */
-	accessMenuByText(element, text) {
-		cy.get(element).contains(text).click()
+	accessMenuByText(element, text, time) {
+		if (time) {
+			cy.get(element, { timeout: time }).contains(text).should('be.visible').click()
+		} else {
+			cy.fixture('env').then(data => {
+				cy.get(element, { timeout: data.TIME_WAIT }).contains(text).should('be.visible').click()
+			})
+		}
 	}
 	/**
 	 *Override click adding wait option

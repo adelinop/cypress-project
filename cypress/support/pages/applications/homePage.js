@@ -1,8 +1,7 @@
 import BasePage from '../basePage'
 
 const selectors = {
-	menuLinks: 'div [id="content"]  a ',
-	paragraph: 'div [class = example ] p'
+	menuLinks: 'div [id="content"]  a '
 }
 
 class HomePage extends BasePage {
@@ -10,9 +9,6 @@ class HomePage extends BasePage {
 		cy.fixture('env').then(dataEnv => {
 			this.accessMenuByText(selectors.menuLinks, dataEnv.menus.AB)
 		})
-	}
-	validateTextParagraph() {
-		cy.get(selectors.paragraph).should('be.visible')
 	}
 }
 export default HomePage

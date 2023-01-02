@@ -9,7 +9,8 @@
     "cy:open": "cypress open",
     "format": "prettier --write \"cypress/**/*.{js,jsx}\" && eslint \"cypress/**/*.{js,jsx}\"",
     "prettier:check" : "prettier --check",
-    "prettier:write" :"prettier --write ."
+    "prettier:write" :"prettier --write .", 
+    "jenkins": "java -jar jenkins.war -httPort=8080 --enable-future-java"
   },
   "author": "",
   "license": "ISC",

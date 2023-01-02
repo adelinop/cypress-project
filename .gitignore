@@ -4,3 +4,4 @@ cypress/reports
 .vscode
 results
 reports
+jenkins.war

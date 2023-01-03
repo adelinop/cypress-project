@@ -15,5 +15,4 @@ describe('Menu Application Tests', () => {
 		application.addRemoveElementsPage.validateButtonIsVisible()
 		application.addRemoveElementsPage.validateButtonIsNotVisible()
 	})
-	it('', () => {})
 })

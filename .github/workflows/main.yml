@@ -23,5 +23,11 @@ jobs:
           SLACK_TITLE: Execution Report
           SLACK_MESSAGE: "Te deixei um presentinho"
           SLACK_COLOR: ${{ job.status }}
-       
+      - name: Discord Notifier
+        uses: fateyan/action-discord-notifier@v1.2.0
+        with:
+          # A full discord webhook url
+          webhook: https://discord.com/api/webhooks/1059904624435400744/lAx36O2RerBEr5o4zQrwzLpEaX1T0DmfnofgMUuBzkgiS-d6y-JIpom30GXhx5qTGFGK 
+          # Message title
+          message-title: Te deixei um presentinho
        

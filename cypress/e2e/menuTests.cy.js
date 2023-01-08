@@ -15,4 +15,8 @@ describe('Menu Application Tests', () => {
 		application.addRemoveElementsPage.validateButtonIsVisible()
 		application.addRemoveElementsPage.validateButtonIsNotVisible()
 	})
+	it('AUR-11 Basic-Auth', () => {
+		application.homePage.authenticateAccess()
+		application.basicAuthPage.validatePageLoad()
+	})
 })

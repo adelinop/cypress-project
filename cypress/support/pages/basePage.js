@@ -27,5 +27,10 @@ class BasePage {
 			})
 		}
 	}
+	authenticateAccess() {
+		cy.fixture('env').then(data => {
+			cy.visit(data.auth.user + ':' + data.auth.password + '@' + data.baseUrl + '/' + data.menus.BasicAuth)
+		})
+	}
 }
 export default BasePage

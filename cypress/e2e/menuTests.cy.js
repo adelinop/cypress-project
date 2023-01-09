@@ -19,4 +19,9 @@ describe('Menu Application Tests', () => {
 		application.homePage.authenticateAccess()
 		application.basicAuthPage.validatePageLoad()
 	})
+	it('AUR-13 Broken Images', () => {
+		application.homePage.accessBrokenImagesPage()
+		application.brokenImagesPage.validateBrokenImage()
+		application.brokenImagesPage.validateImage()
+	})
 })

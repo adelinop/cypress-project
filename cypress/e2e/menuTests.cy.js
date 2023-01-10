@@ -24,4 +24,8 @@ describe('Menu Application Tests', () => {
 		application.brokenImagesPage.validateBrokenImage()
 		application.brokenImagesPage.validateImage()
 	})
+	it('AUR-14 Context Menu', () => {
+		application.homePage.accessContextMenuPage()
+		application.contextMenuPage.clickBox()
+	})
 })

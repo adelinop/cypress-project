@@ -6,6 +6,7 @@ import AbPage from './applications/abPage'
 import AddRemoveElementsPage from './applications/addRemoveElementsPage'
 import BasicAuthPage from './applications/basicAuthPage'
 import BrokenImagesPage from './applications/brokenImagesPage'
+import ContextMenuPage from './applications/contextMenuPage'
 /**
  * This is the main class the encapsulates all pages regarding the application (Except base pages since they are not meant to be directly called).
  *
@@ -24,6 +25,7 @@ class Application {
 		this.addRemoveElementsPage = new AddRemoveElementsPage()
 		this.basicAuthPage = new BasicAuthPage()
 		this.brokenImagesPage = new BrokenImagesPage()
+		this.contextMenuPage = new ContextMenuPage()
 	}
 }
 

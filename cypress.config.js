@@ -6,6 +6,7 @@ module.exports = defineConfig({
 	reporter: 'cypress-mochawesome-reporter',
 	trashAssetsBeforeRuns: true,
 	defaultCommandTimeout: 15000,
+	chromeWebSecurity: false,
 	viewportWidth: 1920,
 	viewportHeight: 1080,
 	reporterOptions: {

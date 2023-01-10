@@ -28,4 +28,11 @@ describe('Menu Application Tests', () => {
 		application.homePage.accessContextMenuPage()
 		application.contextMenuPage.clickBox()
 	})
+	it('AUR-15 Drag and Drop', () => {
+		application.homePage.accessDragAndDropPage()
+		application.dragAndDropPage.changeSquarePositions()
+		application.dragAndDropPage.validateChangedB()
+		application.dragAndDropPage.changeSquarePositions()
+		application.dragAndDropPage.validateChangedA()
+	})
 })

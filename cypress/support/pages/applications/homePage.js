@@ -25,5 +25,10 @@ class HomePage extends BasePage {
 			this.accessMenuByText(selectors.menuLinks, dataEnv.menus.ContextMenu)
 		})
 	}
+	accessDragAndDropPage() {
+		cy.fixture('env').then(dataEnv => {
+			this.accessMenuByText(selectors.menuLinks, dataEnv.menus.DragAndDrop)
+		})
+	}
 }
 export default HomePage

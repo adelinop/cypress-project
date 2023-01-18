@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "cy:run": "cypress run",
     "cy:open": "cypress open",
     "format": "prettier --write \"cypress/**/*.{js,jsx}\" && eslint \"cypress/**/*.{js,jsx}\"",
@@ -12,7 +11,7 @@
     "prettier:write" :"prettier --write .", 
     "jenkins": "java -jar jenkins.war -httPort=8080 --enable-future-java"
   },
-  "author": "",
+  "author": "adelinop",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^12.2.0",

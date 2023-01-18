@@ -3,7 +3,7 @@ const application = new Application()
 
 describe('Menu Application Tests', () => {
 	beforeEach(() => {
-		cy.accessUrl()
+		cy.visit('')
 	})
 	it('AUR-8 A/B Test Variation 1', () => {
 		application.homePage.accessABVariation()

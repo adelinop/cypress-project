@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cy:run": "cypress run",
-    "cy:open": "cypress open",
+    "cy:run": "cypress run --config baseUrl=https://the-internet.herokuapp.com",
+    "cy:open": "cypress open --config baseUrl=https://the-internet.herokuapp.com",
     "format": "prettier --write \"cypress/**/*.{js,jsx}\" && eslint \"cypress/**/*.{js,jsx}\"",
     "prettier:check" : "prettier --check",
     "prettier:write" :"prettier --write .", 
